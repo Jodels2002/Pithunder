@@ -59,8 +59,8 @@ cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
 	sudo systemctl disable man-db.timer
 	sudo systemctl disable plymouth-reboot.service 
 	sudo systemctl disable plymouth-start.service 
-	sudo systemctl disable alsa-restore.service at boot time
-	sudo systemctl disable alsa-state.service at boot time    
+	sudo systemctl disable alsa-restore.service
+	sudo systemctl disable alsa-state.service    
         sudo update-rc.d motd remove
 	sudo rm -rf /etc/systemd/pstore.conf
        	sudo rm -rf /etc/systemd/journald.conf
