@@ -24,7 +24,7 @@ echo " "
       sudo apt-get install -y libdrm-dev libegl1-mesa-dev libgles2-mesa-dev libgbm-dev      
       
       clear
-      echo "Compiling Pistrorm"
+      echo "Compiling Pistorm"
       echo " "
 cd      
 git clone https://github.com/captain-amygdala/pistorm.git
