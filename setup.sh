@@ -32,14 +32,19 @@ cd pistorm
 make PLATFORM=PI3_BULLSEYE
 
 sudo chmod -R 777 /home/$USER/Amiga 
-sudo cp -R /home/$USER/KickPi-OS/scripts/* /usr/local/bin	 
+sudo cp -R /home/$USER/Pithunder/scripts/* /usr/local/bin	 
 
 cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
 
+
+ sudo cp -R /home/$USER/Pithunder/config/pistorm.service /etc/systemd/system/pistorm.service
  sudo systemctl enable pistorm
  
+ sudo cp -R /home/$USER/Pithunder/config/splash.service /etc/systemd/system/splash.service
+ sudo cp -R /home/$USER/Pithunder/config/Booting.png /etc/systemd/system/Booting.png
+ sudo systemctl enable splash
 
-
+ 
 sudo raspi-config nonint do_boot_behaviour B2
 sudo raspi-config nonint get_ssh
 sudo raspi-config nonint do_i2c 0
