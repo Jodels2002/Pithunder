@@ -74,6 +74,7 @@ cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
        	sudo rm -rf /etc/systemd/system/printer.target.wants/
 
 sudo cp -R /home/$USER/Pithunder/config/default.cfg /home/$USER/pistorm/
+sudo cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
 
 sudo raspi-config nonint do_boot_behaviour B2
 sudo raspi-config nonint get_ssh
