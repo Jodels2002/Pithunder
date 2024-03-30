@@ -20,7 +20,7 @@ echo " "
       sudo apt-get -y autoremove
       sudo apt-get install -y toilet dialog mc zip unzip wget
       sudo apt-get install -y libasound2-dev      
-      sudo apt-get install -y ntfs-*
+      #sudo apt-get install -y ntfs-*
       sudo apt-get install -y libdrm-dev libegl1-mesa-dev libgles2-mesa-dev libgbm-dev      
       
       clear
