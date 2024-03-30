@@ -31,7 +31,7 @@ git clone https://github.com/captain-amygdala/pistorm.git
 cd pistorm
 make PLATFORM=PI3_BULLSEYE
 
-sudo chmod -R 777 /home/$USER/Amiga 
+sudo chmod -R 777 /home/$USER/pistorm
 sudo cp -R /home/$USER/Pithunder/scripts/* /usr/local/bin	 
 
 cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
@@ -72,8 +72,10 @@ cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
        	sudo rm -rf /etc/systemd/system/multi-user.target.wants/cu*
        	sudo rm -rf /etc/systemd/system/multi-user.target.wants/rsyslog.service
        	sudo rm -rf /etc/systemd/system/printer.target.wants/
-	
-      fisudo raspi-config nonint do_boot_behaviour B2
+
+sudo cp -R /home/$USER/Pithunder/config/default.cfg /home/$USER/pistorm/
+
+sudo raspi-config nonint do_boot_behaviour B2
 sudo raspi-config nonint get_ssh
 sudo raspi-config nonint do_i2c 0
 sudo raspi-config nonint do_expand_rootfs
