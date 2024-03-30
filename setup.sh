@@ -17,7 +17,7 @@ echo " "
 echo " "
    
       sudo apt-get -y upgrade
-	    sudo apt-get -y autoremove
+      sudo apt-get -y autoremove
       sudo apt-get install -y toilet dialog mc zip unzip wget
       sudo apt-get install -y libasound2-dev      
       sudo apt-get install -y ntfs-*
@@ -74,7 +74,7 @@ cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
        	sudo rm -rf /etc/systemd/system/printer.target.wants/
 
 sudo cp -R /home/$USER/Pithunder/config/default.cfg /home/$USER/pistorm/
-sudo cp  /home/$USER/Pithunder/scripts/bashrc /home/$USER/.bashrc
+sudo cp  /home/$USER/Pithunder/scripts/.bashrc /home/$USER/.bashrc
 
 sudo raspi-config nonint do_boot_behaviour B2
 sudo raspi-config nonint get_ssh
